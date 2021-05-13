@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9FEFF"
+    tools:context=".muljoin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/hostname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aclonica"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Enter your name"
+            android:textColor="#000" />
+
+
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:hint="Enter code to join"
+            android:fontFamily="@font/aclonica"
+            android:gravity="center"
+            android:textColor="#FF9800" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Code : "
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="JOIN"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="15sp"/>
+
+        <View
+            android:id="@+id/lineabove"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#EEEBEB" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:textColor="#037369"
+            android:text="JOINED"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/joinedlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:textColor="#673AB7"
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>

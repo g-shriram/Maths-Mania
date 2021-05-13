@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "783572580974",
+    "firebase_url": "https://mathsmania-597c8-default-rtdb.firebaseio.com",
+    "project_id": "mathsmania-597c8",
+    "storage_bucket": "mathsmania-597c8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783572580974:android:0111f8fbc6b017ae8cc47f",
+        "android_client_info": {
+          "package_name": "com.gprs.mathsmania"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "783572580974-e6lg0ctacfdjvfbmdhakl72k8nrcp6el.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gprs.mathsmania",
+            "certificate_hash": "cd60e8ebe0a56421cfe50d8545a1957fb996a955"
+          }
+        },
+        {
+          "client_id": "783572580974-mshtv739c8p2o35fd6h277cgs7erl6e8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABTDTNyRiqXZkEdFiTgio2ILgXsAG70Mg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "783572580974-mshtv739c8p2o35fd6h277cgs7erl6e8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/dash_bg"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/policy"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/policy"/>
+
+    <TextView
+        android:id="@+id/arithmetic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="100dp"
+        android:textColor="#000"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Arithmetic"
+        android:textAlignment="center"
+        android:textSize="24sp"
+         />
+    <LinearLayout
+        android:id="@+id/level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/arithmetic"
+        android:layout_marginTop="25sp"
+        android:weightSum="2">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:onClick="gotoeasy"
+            android:layout_weight="1"
+            android:src="@drawable/normal" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:onClick="gotoinsane"
+            android:src="@drawable/insane" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/multiplayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="50dp"
+        android:textColor="#000"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_below="@id/level"
+        android:text="Multiplayer"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        />
+
+        <LinearLayout
+            android:id="@+id/but"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/multiplayer"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="#E1F146"
+                android:fontFamily="@font/aclonica"
+                android:elevation="20dp"
+                android:onClick="gotojoin"
+                android:text="JOIN"
+                android:textColor="#4C14AF"
+                android:textSize="18sp" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="#FF9800"
+
+                android:fontFamily="@font/aclonica"
+                android:onClick="gotohost"
+                android:text="HOST"
+                android:textColor="#4C14AF"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/but"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="ca-app-pub-9274231809050792/8578448503">
+        </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
+</ScrollView>
